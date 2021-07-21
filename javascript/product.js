@@ -6,9 +6,8 @@ $(() => {
   // Display the product on the product page
 });
 
-// A function to get the cart list  from local Storage
 /**
- *
+ *A function to get the cart list  from local Storage
  * @returns {[]}
  */
 function getCartLocalStorage() {

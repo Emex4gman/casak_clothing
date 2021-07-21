@@ -9,12 +9,18 @@ $(() => {
   dispayTheCartItems();
   updateTotalAmount();
 });
-// A function to get the cart list  from local Storage
+/**
+ *A function to get the cart list  from local Storage
+ * @returns {[]}
+ */
 function getCartLocalStorage() {
   return JSON.parse(window.localStorage.getItem("cart") ?? "[]");
 }
 
-// A function to set the cart list in the local Storage
+/**
+ * A function to set the cart list in the local Storage
+ * @param {Array} crt
+ */
 function setLocalStorage(crt = []) {
   window.localStorage.setItem("cart", JSON.stringify(crt));
 }
@@ -60,7 +66,6 @@ let cartOld = [
     grossPrice: 300,
   },
 ];
-
 
 // remove item from cart
 function removeItem(id) {
