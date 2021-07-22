@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,300;0,500;0,800;0,900;1,100;1,200;1,300;1,700;1,800&display=swap");
+/* 
+COLORS: 
+BC8DA0
+A04668
+F5F5DC
+AB4967
+0C1713
+*/
+
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 0.4em;
+}
+
+::-webkit-scrollbar-track {
+  background: #7d6556;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #efcb5e;
+}
+
+body {
+  background-color: #0000009c;
+  position: relative;
+  color: #8d8d8a;
+  font-family: "Raleway", sans-serif;
+}
+
+.background {
+  position: absolute;
+  background: url("../images/bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0px;
+  border: none;
+  height: 100vh;
+  width: 100%;
+  z-index: -999999;
+  /* left: -58.1429px; */
+  top: 0px;
+}
+header {
+  padding: 3em;
+}
+.top {
+  height: 3em;
+}
+.main-page {
+  max-width: 1100px;
+  /* border: #bc8da0 solid 1px; */
+  margin: auto;
+
+  background-color: #0000009c;
+}
+
+.main-nav {
+  background-color: black;
+}
+/* 
+Show when page is on mobile  */
+.mobile-nav {
+  display: none;
+}
+
+.main-nav ul {
+  display: flex;
+  padding-left: 3em;
+  flex-wrap: wrap;
+}
+.main-nav li,
+.mobile-nav li {
+  list-style: none;
+  text-decoration: none;
+  padding: 1em;
+  transition: border-top 0.5s ease-in-out;
+}
+
+.main-nav li a,
+.mobile-nav li a {
+  font-weight: bold;
+  color: #f5f5dc;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 1.4em;
+  transition: color 0.3s ease-in-out;
+}
+.main-nav li a:hover {
+  color: #a04668;
+  transition: color 0.3s ease-in-out;
+}
+footer {
+}
+
+.footer {
+  padding: 3em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.footer-content {
+  width: 30%;
+  /* padding-right: 1em; */
+}
+.copy-right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 3em;
+  padding-right: 3em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  background-color: black;
+}
+
+.socials {
+  /* font-size: 1em; */
+  cursor: pointer;
+}
+.socials ul {
+  display: flex;
+}
+.socials li {
+  list-style: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* width: 25px; */
+  width: 2em;
+  height: 2em;
+  vertical-align: middle;
+  border-radius: 2em;
+  margin-left: 0.4em;
+}
+.socials li:hover {
+  background-color: #a04668;
+  color: white;
+
+  transition: color 0.5s ease-in-out, background-color 0.5s ease-in-out;
+}
