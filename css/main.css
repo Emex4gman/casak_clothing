@@ -191,6 +191,9 @@ Show when page is on mobile  */
 MOBILE VIEW 
 */
 @media screen and (max-width: 450px) {
+  header {
+    flex-direction: column-reverse;
+  }
   .main-nav {
     display: none;
   }
