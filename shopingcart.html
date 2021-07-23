@@ -10,44 +10,121 @@
       integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="./css/main.css" />
     <script
       src="https://code.jquery.com/jquery-3.6.0.min.js"
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
       crossorigin="anonymous"
     ></script>
-    <title>Document</title>
+    <title>CASAK CLOTHING</title>
   </head>
   <body>
-    <header>
-      <div class="logo"></div>
-      <nav>
-        <a href="/index.html">Home</a>
-        <a href="">Men</a>
-        <a href="">Women</a>
-        <a href="">Kids</a>
-        <a href="">Logout</a>
-        <a href="">Signin</a>
-        <a href="/shopingcart.html">shopingcart</a>
-      </nav>
-    </header>
-    <main>
-      <h1>Shopping Cart Page</h1>
-      <h3>ToTal: $<span id="totalAmount"></span></h3>
-      <div class="mains">
-        <div class="action">
-          <p>Qty <span>1</span></p>
-          <button id="add">Add</button>
-          <button id="reduce">reduce</button>
-          <button id="remove">remove</button>
+    <div class="background"></div>
+    <div class="backdrop"></div>
+    <div class="top"></div>
+    <div class="main-page">
+      <header>
+        <div class="logo">
+          <h1>CASAK CLOTHING</h1>
         </div>
-      </div>
-    </main>
-    <footer>
-      <p>
-        The content of this site is copyright-protected and is the property of
-        Team 7
-      </p>
-    </footer>
+        <div class="socials">
+          <ul>
+            <li><i class="fab fa-facebook-f"></i></li>
+            <li><i class="fab fa-twitter"></i></li>
+            <li><i class="fab fa-google-plus-g"></i></li>
+            <li><i class="fab fa-instagram"></i></li>
+            <li><i class="fab fa-snapchat-ghost"></i></li>
+          </ul>
+        </div>
+      </header>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/men.html">Men</a></li>
+          <li><a href="/women.html">Women</a></li>
+          <li><a href="/kids.html">Kids</a></li>
+          <li><a href="/index.html">Logout</a></li>
+          <li><a href="/login.html">Signin</a></li>
+          <li><a href="/register.html">Register</a></li>
+          <li><a href="/shopingcart.html">shopingcart</a></li>
+        </ul>
+      </nav>
+      <nav class="mobile-nav">
+        <h3>Menu</h3>
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/men.html">Men</a></li>
+          <li><a href="/women.html">Women</a></li>
+          <li><a href="/kids.html">Kids</a></li>
+          <li><a href="/index.html">Logout</a></li>
+          <li><a href="/login.html">Signin</a></li>
+          <li><a href="/register.html">Register</a></li>
+          <li><a href="/shopingcart.html">shopingcart</a></li>
+        </ul>
+      </nav>
+
+      <main>
+        <!-- ADD THE CONTENT BELOW HERE -->
+        <h1>CASAK CLOTHING SHOPPING CART PAGE</h1>
+        <!-- EVERY OTHER PAGE CONTENT GOES HERE -->
+
+        <h3>TOTAL: $<span id="totalAmount"></span></h3>
+        <div class="mains">
+          <div class="action">
+            <p>Qty <span>1</span></p>
+            <button id="add">Add</button>
+            <button id="reduce">reduce</button>
+            <button id="remove">remove</button>
+          </div>
+        </div>
+        <!-- ADD THE CONTENT ABOVE HERE -->
+      </main>
+      <footer>
+        <hr />
+        <div class="footer">
+          <div class="footer-content">
+            <h2>GET IN TOUCH</h2>
+            <p>You can contact us in the following info.</p>
+            <p>
+              <i class="fas fa-map-pin"></i> 1283 Rus street Mississauga ON,
+              Canada.
+            </p>
+            <p><i class="fas fa-phone"></i> 317-456-2564.</p>
+            <p><i class="fas fa-envelope"></i> casakclothing@gmail.com.</p>
+          </div>
+          <div class="footer-content">
+            <h2>Latest News</h2>
+            <p>50% discount on Kids clothes</p>
+            <p>12% discount on Men clothes</p>
+            <p>60% on Winter Purchase</p>
+          </div>
+          <div class="footer-content">
+            <h2>TAGS</h2>
+            <div class="tags">
+              <span>MEN</span>
+              <span>WOMEN</span>
+              <span>KIDS</span>
+              <span>SUMMER</span>
+              <span>FLASH-DEALS</span>
+            </div>
+          </div>
+        </div>
+        <div class="copy-right">
+          <p>Copyright Team 7</p>
+          <div class="socials">
+            <ul>
+              <li><i class="fab fa-facebook-f"></i></li>
+              <li><i class="fab fa-twitter"></i></li>
+              <li><i class="fab fa-google-plus-g"></i></li>
+              <li><i class="fab fa-instagram"></i></li>
+              <li><i class="fab fa-snapchat-ghost"></i></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- ADDING THE UTILITY SCRIPTS  -->
+    <script src="./javascript/util.js"></script>
     <script src="./javascript/shoppingCart.js"></script>
   </body>
 </html>

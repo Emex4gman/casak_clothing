@@ -89,6 +89,9 @@ function increaseQty(id) {
 // Decreasing the quantity of an item in the cart
 function decreaseQty(id) {
   for (let i = 0; i < cart.length; i++) {
+    if (cart[i].id === id && cart[i].qty == 1) {
+      removeItem(id);
+    }
     if (cart[i].id === id && cart[i].qty > 1) {
       cart[i].qty--;
       cart[i].grossPrice = cart[i].price * cart[i].qty;
