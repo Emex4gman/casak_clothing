@@ -38,7 +38,7 @@ body {
 }
 
 .background {
-  position: absolute;
+  position: fixed;
   background: url("../images/bg.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -53,13 +53,16 @@ body {
 }
 header {
   padding: 3em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .top {
   height: 3em;
 }
 .main-page {
   max-width: 1100px;
-  /* border: #bc8da0 solid 1px; */
+  border: #bc8da0 solid 1px;
   margin: auto;
 
   background-color: #0000009c;
@@ -100,7 +103,7 @@ Show when page is on mobile  */
   color: #a04668;
   transition: color 0.3s ease-in-out;
 }
-footer {
+.mobile-nav {
 }
 
 .footer {
@@ -113,6 +116,21 @@ footer {
 .footer-content {
   width: 30%;
   /* padding-right: 1em; */
+}
+.footer-content:nth-child(1) p {
+  margin-top: 0.6em;
+}
+.footer-content span {
+  border: solid #8d8d8a 1px;
+  white-space: nowrap;
+  padding: 0.2em;
+  margin: 0.2em;
+  cursor: pointer;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
 }
 .copy-right {
   display: flex;
@@ -149,5 +167,5 @@ footer {
   background-color: #a04668;
   color: white;
 
-  transition: color 0.5s ease-in-out, background-color 0.5s ease-in-out;
+  transition: color 0.4s ease-in-out, background-color 0.4s ease-in-out;
 }

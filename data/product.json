@@ -4,6 +4,7 @@
     "name": "Men Short",
     "Price": 110.2,
     "catergory": "MEN",
+    "image": "men.jpg",
     "description": "MEN"
   },
   {
@@ -11,6 +12,15 @@
     "name": "Women Short",
     "Price": 110.2,
     "catergory": "WOMAN",
+    "image": "women.jpg",
     "description": "WOMAN"
+  },
+  {
+    "1d": "3",
+    "name": "Kids Short",
+    "Price": 110.2,
+    "catergory": "KIDS",
+    "image": "kids.jpg",
+    "description": "KIDS"
   }
 ]
