@@ -1,7 +1,7 @@
 let currentImage = 1;
-let currentTestimony = 1;
+
 $(() => {
-  for (let i = 0; i < 8; i++) {
+  for (let i = 0; i < 5; i++) {
     $(".futured-products").append(`
    <div class="product-item">
             <img src="./images/women.jpg" alt="" width="220" height="220" />
@@ -32,12 +32,15 @@ $(() => {
     $(`.slider img:nth-child(${currentImage})`).css("z-index", "10");
     $(`.slider img:nth-child(${currentImage})`).css("transform", "scale(1.1)");
   }, 3000);
-});
 
-setInterval(() => {
-  if (currentTestimony == 3) {
-    currentTestimony = 1;
-  } else {
-    currentTestimony++;
-  }
-}, 4000);
+  //handle search
+  $(".search i").click(function (e) {
+    e.preventDefault();
+    let query = $("#search").val().trim();
+
+    if (query.length > 1) {
+      location.href = location.href + `search.html?value=${query}`;
+      // Send to search html
+    }
+  });
+});

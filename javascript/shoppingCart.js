@@ -27,19 +27,30 @@ function setLocalStorage(crt = []) {
 
 // Display the the cart itmes and the price
 function dispayTheCartItems() {
-  $(".mains").html("");
+  $(".cart-items").html("");
   if (cart.length === 0) {
-    $(".mains").html("No Item In Cart");
+    $(".cart-items").html("No Item In Cart");
   }
   // Loop through the cart and display items
   cart.forEach((e) => {
-    $(".mains").append(`<div class="action">
-        <p>Qty: <span>${e.qty}</span></p>
-        <p>Gross price: <span>${e.grossPrice}</span></p>
-        <button id="add" onclick='increaseQty(${e.id})'>Add</button>
-        <button id="reduce"   onclick='decreaseQty(${e.id})'>reduce</button>
-        <button id="remove"  onclick='removeItem(${e.id})'>remove</button>
-      </div>`);
+    $(".cart-items").append(`
+  <div class="cart-items-container">
+  <div class="cart-item-img">
+    <img src="./images/kids.jpg" width="100px" height="100px" />
+  </div>
+  <div class="cart-action">
+    <p>${e.name}</p>
+    <p>Price: <span>$${e.grossPrice}</span></p>
+    <button id="add" onclick="increaseQty(${e.id})">
+      <i class="fas fa-plus"></i>
+    </button>
+    <span>${e.qty}</span>
+    <button id="reduce" onclick="decreaseQty(${e.id})">
+      <i class="fas fa-minus"></i>
+    </button>
+    <button id="remove" onclick="removeItem(${e.id})">Delete</button>
+  </div>
+</div>`);
   });
 }
 

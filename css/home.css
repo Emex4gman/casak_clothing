@@ -108,7 +108,7 @@
   font-style: italic;
   background-color: #0c1713;
   padding: 0.6em;
-  font-size: 1.6em;
+  font-size: 1.2em;
   border-radius: 1em;
 }
 .testimony-body p:nth-child(2) {
@@ -116,6 +116,34 @@
 }
 .testimony-section {
   position: relative;
+}
+/* SERCH TO BE MOVED TO MAIN */
+.search-container {
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+  padding-bottom: 1em;
+  padding-right: 1em;
+}
+.search {
+  border: 1px solid #8d8d8a;
+  border-radius: 10em;
+  display: inline-block;
+  padding: 0.5em;
+  margin-left: auto;
+}
+.search input {
+  border: none;
+  background-color: transparent;
+  color: white;
+  outline: none;
+  padding: 0.3em;
+  height: 1.5em;
+  /* width: 25em; */
+  font-family: "Raleway", sans-serif;
+}
+.search i {
+  cursor: pointer;
 }
 
 /* 
