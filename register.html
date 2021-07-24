@@ -11,6 +11,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/style_register.css" />
     <script
       src="https://code.jquery.com/jquery-3.6.0.min.js"
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
@@ -65,8 +66,43 @@
 
       <main>
         <!-- ADD THE CONTENT BELOW HERE -->
-        <h1>CASAK CLOTHING REGISTER PAGE</h1>
+        <!-- <h1>CASAK CLOTHING REGISTER PAGE</h1> -->
         <!-- EVERY OTHER PAGE CONTENT GOES HERE -->
+        <div id="main">
+          <div id="form">
+            <!--Making input fields for the user to enter details-->
+            <p>Enter your Full Name:*</p>
+            <input type="text" id="fname_group2" />
+            <div class="span"></div>
+            <br />
+
+            <p>Enter your mobile no.:*</p>
+            <input type="text" id="mobile_group2" />
+            <div class="span"></div>
+            <br />
+
+            <p>Enter your email:*</p>
+            <input type="text" id="email_group2" />
+            <div class="span"></div>
+            <br />
+
+            <p>Enter your password:*</p>
+            <input type="text" id="password_group2" />
+            <div class="span"></div>
+            <br />
+
+            <p>Re-enter your password:*</p>
+            <input type="text" id="repassword_group2" />
+            <div class="span"></div>
+            <br />
+
+            <div id="btn">
+              <!--Creating a button to submit the details-->
+              <button type="button" id="button_group2">REGISTER</button>
+            </div>
+          </div>
+          <h4>Dont have an account? <a href="login.html">Click Here</a></h4>
+        </div>
         <!-- ADD THE CONTENT ABOVE HERE -->
       </main>
       <footer>
@@ -115,5 +151,6 @@
     </div>
     <!-- ADDING THE UTILITY SCRIPTS  -->
     <script src="./javascript/util.js"></script>
+    <script src="./javascript/registration.js"></script>
   </body>
 </html>
