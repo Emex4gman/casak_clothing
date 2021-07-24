@@ -1,0 +1,135 @@
+.slider {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+}
+.slider .slider-title {
+  position: absolute;
+  z-index: 11;
+  left: -500px;
+  bottom: 1em;
+  background-color: #a04668;
+  padding: 0.8em;
+  color: white;
+  transition: left 2s ease-in-out;
+}
+.slider img {
+  width: 100%;
+  position: absolute;
+  transition: transform 2s ease-in-out;
+}
+
+.top-category {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3em;
+  background-color: #000;
+}
+.category-img {
+  height: 4.5em;
+  width: 4.5em;
+  border-radius: 4.5em;
+  background-color: #a04668;
+  margin: auto;
+}
+.category {
+  width: 30%;
+  text-align: center;
+}
+.category h1 {
+  color: white;
+  margin: 0.5em 0;
+}
+/* 
+
+*/
+.futured-products {
+  display: flex;
+  padding: 3em;
+  background-color: black;
+  margin: 1em 0;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.product-item {
+  width: 30%;
+  padding: 1em;
+  text-align: center;
+}
+.product-item strong {
+  color: #fff;
+}
+.product-item button {
+  margin-top: 0.6em;
+  padding: 0.7em;
+  cursor: pointer;
+  background-color: #a04668;
+  color: white;
+  font-weight: 500;
+  outline: none;
+  border: none;
+  border-radius: 0.5em;
+  font-family: "Raleway", sans-serif;
+}
+.product-item button > a {
+  color: white;
+  text-decoration: none;
+}
+.product-item img {
+  margin: auto;
+  text-align: center;
+}
+.testimony {
+  padding: 3em;
+  display: flex;
+  gap: 1em;
+  flex-wrap: nowrap;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  /* position: fixed; */
+  /* left: 0; */
+}
+.testimony-img {
+  width: 9em;
+  height: 9em;
+  border-radius: 10em;
+  background-color: red;
+  overflow: hidden;
+}
+.testimony-img img {
+  min-width: 100%;
+}
+
+.testimony-body {
+  font-style: italic;
+  background-color: #0c1713;
+  padding: 0.6em;
+  font-size: 1.6em;
+  border-radius: 1em;
+}
+.testimony-body p:nth-child(2) {
+  text-align: end;
+}
+.testimony-section {
+  position: relative;
+}
+
+/* 
+MOBILE VIEW 
+*/
+@media screen and (max-width: 450px) {
+  .testimony,
+  .top-category,
+  .futured-products {
+    flex-direction: column;
+  }
+  .category,
+  .product-item {
+    width: 100%;
+    margin-bottom: 1em;
+  }
+}

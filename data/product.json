@@ -1,6 +1,6 @@
 [
   {
-    "1d": "1",
+    "id": "1",
     "name": "Men Short",
     "Price": 110.2,
     "catergory": "MEN",
@@ -8,7 +8,7 @@
     "description": "MEN"
   },
   {
-    "1d": "2",
+    "id": "2",
     "name": "Women Short",
     "Price": 110.2,
     "catergory": "WOMAN",
@@ -16,7 +16,7 @@
     "description": "WOMAN"
   },
   {
-    "1d": "3",
+    "id": "3",
     "name": "Kids Short",
     "Price": 110.2,
     "catergory": "KIDS",
