@@ -23,7 +23,7 @@
 .top-category {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  /* align-items: center; */
   justify-content: space-between;
   padding: 3em;
   background-color: #000;
@@ -46,6 +46,9 @@
 /* 
 
 */
+.futured-header {
+  text-align: center;
+}
 .futured-products {
   display: flex;
   padding: 3em;
@@ -54,6 +57,7 @@
   flex-wrap: wrap;
   justify-content: center;
 }
+
 .product-item {
   width: 30%;
   padding: 1em;
