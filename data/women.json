@@ -1,0 +1,106 @@
+[
+  {
+    "id": "1",
+    "name": "Red check dress",
+    "price": 15,
+    "category": "WOMEN",
+    "image": "woman1.jpg",
+    "description": "cotton fabric red and black checker short dress"
+  },
+  {
+    "id": "2",
+    "name": "multi-frill dress",
+    "price": 25,
+    "category": "WOMEN",
+    "image": "woman2.jpg",
+    "description": "multi-colored short frill dress with fluff arms"
+  },
+  {
+    "id": "3",
+    "name": "jumpsuit",
+    "price": 27,
+    "category": "WOMEN",
+    "image": "woman3.jpg",
+    "description": "side slit straight line jumpsuit"
+  },
+  {
+    "id": "4",
+    "name": "maxi dress",
+    "price": 38,
+    "category": "WOMEN",
+    "image": "woman4.jpg",
+    "description": "black colored light embroidered long maxi dress."
+  },
+  {
+    "id": "5",
+    "name": "mini dress",
+    "price": 17,
+    "category": "WOMEN",
+    "image": "woman5.jpg",
+    "description": "Blue polka dots cotton material short dress"
+  },
+  {
+    "id": "6",
+    "name": "neon top",
+    "price": 11,
+    "category": "WOMEN",
+    "image": "woman6.jpg",
+    "description": "neon colored sports crop top"
+  },
+  {
+    "id": "7",
+    "name": "top-skirt",
+    "price": 32,
+    "category": "WOMEN",
+    "image": "woman7.jpg",
+    "description": "silver sequence crop top with mid-length flared skirt"
+  },
+  {
+    "id": "8",
+    "name": "crop top-skirt",
+    "price": 26,
+    "category": "WOMEN",
+    "image": "woman8.jpg",
+    "description": "leather mini skirt with green stretchy crop top"
+  },
+  {
+    "id": "9",
+    "name": "skirts",
+    "price": 25,
+    "category": "WOMEN",
+    "image": "woman9.jpg",
+    "description": "set of two cotton material tennis skirts"
+  },
+  {
+    "id": "10",
+    "name": "shorts with top",
+    "price": 25,
+    "category": "WOMEN",
+    "image": "woman10.jpg",
+    "description": "meshed black top with basic denim shorts"
+  },
+  {
+    "id": "11",
+    "name": "shorts with top",
+    "price": 22,
+    "category": "WOMEN",
+    "image": "woman11.jpg",
+    "description": "basic soft pink top with rugged shorts"
+  },
+  {
+    "id": "12",
+    "name": "denim with top",
+    "price": 48,
+    "category": "WOMEN",
+    "image": "woman12.jpg",
+    "description": "denim jacket with black polka dots top"
+  },
+  {
+    "id": "13",
+    "name": "floral dress",
+    "price": 45,
+    "category": "WOMEN",
+    "image": "woman13.jpg",
+    "description": "pink floral front slit dress"
+  }
+]

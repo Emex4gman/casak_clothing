@@ -1,16 +1,19 @@
 let currentImage = 1;
-
+let products = JSON.parse(localStorage.getItem("products") ?? "[]");
 $(() => {
-  for (let i = 0; i < 5; i++) {
+  for (let i = 0; i < 6; i++) {
+    let product = products[Math.floor(Math.random() * products.length)];
     $(".futured-products").append(`
    <div class="product-item">
-            <img src="./images/women.jpg" alt="" width="220" height="220" />
+      <a href="/product.html?id=${product.id}">
+            <img src="./images/${product.image}" alt="" width="220" height="220" />
+              </a>
               <br />
-            <strong>LIAOCX Men’s Soccer Boots Shoes TF/AG Athletic Sn…</strong>
+            <strong>${product.name}</strong>
               <br />
-            <p>MEN</p>
-            <p>$60.00</p>
-            <button >ADD TO CART</button>
+            <p>${product.category}</p>
+            <p>$${product.price}</p>
+           
           </div>
   `);
   }
@@ -39,7 +42,7 @@ $(() => {
     let query = $("#search").val().trim();
 
     if (query.length > 1) {
-      location.href = location.href + `search.html?value=${query}`;
+      location.href = location.href + `search.html?name=${query}`;
       // Send to search html
     }
   });

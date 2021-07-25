@@ -11,6 +11,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/products.css" />
     <script
       src="https://code.jquery.com/jquery-3.6.0.min.js"
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
@@ -37,6 +38,12 @@
           </ul>
         </div>
       </header>
+      <div class="search-container">
+        <div class="search">
+          <input type="text" placeholder="Search" id="search" />
+          <i class="fas fa-search"></i>
+        </div>
+      </div>
       <nav class="main-nav">
         <ul>
           <li><a href="/">Home</a></li>
@@ -65,7 +72,8 @@
 
       <main>
         <!-- ADD THE CONTENT BELOW HERE -->
-        <h1>CASAK CLOTHING SEARCH PAGE</h1>
+        <h3 class="search-text">Search For: "<strong></strong>"</h3>
+        <div class="products"></div>
         <!-- EVERY OTHER PAGE CONTENT GOES HERE -->
         <!-- ADD THE CONTENT ABOVE HERE -->
       </main>
@@ -115,5 +123,6 @@
     </div>
     <!-- ADDING THE UTILITY SCRIPTS  -->
     <script src="./javascript/util.js"></script>
+    <script src="./javascript/search.js"></script>
   </body>
 </html>

@@ -1,0 +1,98 @@
+[
+  {
+    "id": "K1",
+    "name": "tie-die set",
+    "price": 12,
+    "category": "kids",
+    "image": "kid1.png",
+    "description": "Multi-colored tie and die furry coord set"
+  },
+  {
+    "id": "K2",
+    "name": "co-ord set",
+    "price": 20,
+    "category": "kids",
+    "image": "kid2.png",
+    "description": "Cotton animal printed bottoms with black top"
+  },
+  {
+    "id": "K3",
+    "name": "pajama set",
+    "price": " $32",
+    "category": "kids",
+    "image": "kid3.png",
+    "description": "Pink butterfly printed hoodie with pajama"
+  },
+  {
+    "id": "K4",
+    "name": "onesies",
+    "price": 30,
+    "category": "kids",
+    "image": "kid4.png",
+    "description": "Skin colored full arm unisex onesies ."
+  },
+  {
+    "id": "K5",
+    "name": "baby co-ords",
+    "price": 25,
+    "category": "kids",
+    "image": "kid5.png",
+    "description": "Girls onesies with sunflower printed pajama"
+  },
+  {
+    "id": "K6",
+    "name": "frilled frock",
+    "price": 20,
+    "category": "kids",
+    "image": "kid6.png",
+    "description": "Cotton material full arms pink floral frock"
+  },
+  {
+    "id": "K7",
+    "name": "blue onesies",
+    "price": 25,
+    "category": "kids",
+    "image": "kid7.png",
+    "description": "Tommy Hilfiger blue colored co-ords boy"
+  },
+  {
+    "id": "K8",
+    "name": "checker onesies",
+    "price": 18,
+    "category": "kids",
+    "image": "kid8.png",
+    "description": "Black and white checker onesies with hoodie"
+  },
+  {
+    "id": "K9",
+    "name": "black co-ords",
+    "price": 28,
+    "category": "kids",
+    "image": "kid9.png",
+    "description": "Blue half sleeves sweater with shorts"
+  },
+  {
+    "id": "K10",
+    "name": "girls onesies",
+    "price": 20,
+    "category": "kids",
+    "image": "kid10.png",
+    "description": "Purple onesies with meshed layers on sides"
+  },
+  {
+    "id": "K11",
+    "name": "floral frock",
+    "price": 35,
+    "category": "kids",
+    "image": "kid11.png",
+    "description": "floral purple colored dress for girls"
+  },
+  {
+    "id": "K12",
+    "name": "co-ords",
+    "price": 32,
+    "category": "kids",
+    "image": "kid12.png",
+    "description": "Pink colored frilled co-ords"
+  }
+]

@@ -1,0 +1,98 @@
+[
+  {
+    "id": "101",
+    "name": "Animated T-shirt",
+    "price": 22,
+    "category": "MEN",
+    "image": "Man1.png",
+    "description": "Black cartoon animated t-shirt"
+  },
+  {
+    "id": "102",
+    "name": "Full sleeves t-shirt",
+    "price": 25,
+    "category": "MEN",
+    "image": "Man2.png",
+    "description": "Green round neck full sleeves t-shirt"
+  },
+  {
+    "id": "103",
+    "name": "White shirt",
+    "price": 18,
+    "category": "MEN",
+    "image": "Man3.png",
+    "description": "White colored rose printed shirt."
+  },
+  {
+    "id": "104",
+    "name": "hoodie-jacket",
+    "price": 48,
+    "category": "MEN",
+    "image": "Man4.png",
+    "description": "White colored center printed hoodie with ash denim jacket ."
+  },
+  {
+    "id": "105",
+    "name": "Good luck t-shirt",
+    "price": 35,
+    "category": "MEN",
+    "image": "Man5.png",
+    "description": "White animated print good luck t-shirt"
+  },
+  {
+    "id": "106",
+    "name": "Future t-shirt",
+    "price": 28,
+    "category": "MEN",
+    "image": "Man6.png",
+    "description": "Black colored future printed t-shirt"
+  },
+  {
+    "id": "107",
+    "name": "Blue 01 denim",
+    "price": 35,
+    "category": "MEN",
+    "image": "Man8.png",
+    "description": "Blue shade 01 rugged denim for men"
+  },
+  {
+    "id": "108",
+    "name": "Trouser styled denim",
+    "price": 30,
+    "category": "MEN",
+    "image": "Man9.png",
+    "description": "Blue trouser denim with 30% cotton"
+  },
+  {
+    "id": "109",
+    "name": "blue 08 denim",
+    "price": 40,
+    "category": "MEN",
+    "image": "Man7.png",
+    "description": "Blue shade 08 ankle-length knee cut denims"
+  },
+  {
+    "id": "1010",
+    "name": "Black trouser",
+    "price": 38,
+    "category": "MEN",
+    "image": "Man10.png",
+    "description": " black colored narrow trouser with side pockets"
+  },
+  {
+    "id": "1011",
+    "name": "Formals",
+    "price": 32,
+    "category": "MEN",
+    "image": "Man11.png",
+    "description": "Grey colored straight formal pants"
+  },
+  {
+    "id": "1012",
+    "name": "Black pants",
+    "price": 45,
+    "category": "MEN",
+    "image": "Man12.png",
+    "description": "Semi-formal black wide leg pants"
+  }
+]

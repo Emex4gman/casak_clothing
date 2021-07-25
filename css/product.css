@@ -1,0 +1,48 @@
+#myProd {
+  padding: 3em;
+}
+.myProd-product {
+  display: flex;
+  justify-content: center;
+  gap: 3em;
+}
+
+#myProd .name {
+  color: white;
+  text-transform: capitalize;
+}
+#myProd .description {
+  text-transform: capitalize;
+
+  margin: 0.2em 0;
+}
+#myProd .price {
+  color: white;
+  font-size: 2em;
+  margin: 0.2em 0;
+}
+#myProd a {
+  color: white;
+}
+#myProd button {
+  margin-top: 0.6em;
+  padding: 0.7em;
+  cursor: pointer;
+  background-color: #a04668;
+  color: white;
+  font-weight: 500;
+  outline: none;
+  border: none;
+  border-radius: 0.5em;
+  font-family: "Raleway", sans-serif;
+}
+
+/* 
+MOBILE VIEW 
+*/
+@media screen and (max-width: 450px) {
+  .myProd-product {
+    flex-direction: column;
+    align-items: center;
+  }
+}

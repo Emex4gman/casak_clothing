@@ -1,0 +1,23 @@
+.products {
+  display: flex;
+  padding: 3em;
+  background-color: black;
+  margin: 1em 0;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.products .product-item {
+  width: 30%;
+  padding: 1em;
+  text-align: center;
+}
+
+.products .product-item strong {
+  color: #fff;
+}
+.search-text {
+  padding: 1em 3em;
+  color: white;
+  font-weight: 300;
+}

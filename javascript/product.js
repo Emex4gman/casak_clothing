@@ -1,43 +1,27 @@
-let data = [
-  {
-    id: "1",
-    name: "Men Short",
-    Price: 110.2,
-    catergory: "MEN",
-    image: "men.jpg",
-    description: "MEN",
-  },
-  {
-    id: "2",
-    name: "Women Short",
-    Price: 110.2,
-    catergory: "WOMAN",
-    image: "women.jpg",
-    description: "WOMAN",
-  },
-  {
-    id: "3",
-    name: "Kids Short",
-    Price: 110.2,
-    catergory: "KIDS",
-    image: "kids.jpg",
-    description: "KIDS",
-  },
-];
+let products = JSON.parse(localStorage.getItem("products") ?? "[]");
 
 $(() => {
   let urlId = window.location.href.split("id=")[1];
-  console.log(window.location.href);
-  console.log(urlId);
-  for (let i = 0; i < data.length; i++) {
-    let item = data[i];
+  // console.log(window.location.href);
+  // console.log(urlId);
+  $("#myProd").html("");
+  for (let i = 0; i < products.length; i++) {
+    let item = products[i];
     if (item.id == urlId) {
-      $("#myProd").append("");
       $("#myProd").append(
-        `<div>
-            <img src="../images/${item.image}" alt=""  width="200px"/>
-            <p>${item.name}</p>
-            <p>re</p>
+        ` <div class="myProd-product">
+            <div>
+              <img src="../images/${item.image}" alt="" width="200px" />
+            </div>
+            <div>
+              <p class="name">${item.name}</p>
+              <p class="description">${item.description}</p>
+              <a href="/${item.category.toLowerCase()}.html">${
+          item.category
+        }</a>
+              <p class="price">$${item.price}</p>
+              <button onclick="addItem('${item.id}')">ADD TO CART</button>
+            </div>
           </div>
           `
       );
@@ -67,18 +51,26 @@ function setLocalStorage(crt = []) {
 }
 
 // add item to cart
-function addItem(item) {
+function addItem(id) {
   let local = getCartLocalStorage();
-  // local.push({
-  //   id: 3,
-  //   name: "Banana",
-  //   qty: 1,
-  //   price: 300,
-  //   grossPrice: 300,
-  // });
-  local.push(item);
 
-  //add to local Storage
-  setLocalStorage(local);
-  // updateTotalAmount();
+  let found = products.filter((e) => e.id == id);
+
+  // Check if item is in cart
+  let foundInCArt = local.filter((e) => e.id == id);
+  if (foundInCArt.length > 0) {
+    alert("item Already in cart");
+  }
+
+  if (found.length > 0 && foundInCArt.length == 0) {
+    item = found[0];
+    let itemToAdd = {
+      ...item,
+      grossPrice: item.price,
+      qty: 1,
+    };
+    local.push(itemToAdd);
+    setLocalStorage(local);
+    location.href = `shopingcart.html`;
+  }
 }

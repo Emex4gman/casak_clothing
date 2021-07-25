@@ -4,10 +4,13 @@ let totalAmount = 0.0;
 let cart = getCartLocalStorage();
 // Onpage load
 $(() => {
-  setLocalStorage(cartOld);
+  // setLocalStorage(cartOld);
   cart = getCartLocalStorage();
   dispayTheCartItems();
   updateTotalAmount();
+  $(".total-amount button").click((e) => {
+    makePayment();
+  });
 });
 /**
  *A function to get the cart list  from local Storage
@@ -29,59 +32,44 @@ function setLocalStorage(crt = []) {
 function dispayTheCartItems() {
   $(".cart-items").html("");
   if (cart.length === 0) {
-    $(".cart-items").html("No Item In Cart");
+    $(".cart-items").html("<h2>No Item In Cart</h2>");
   }
   // Loop through the cart and display items
   cart.forEach((e) => {
     $(".cart-items").append(`
   <div class="cart-items-container">
   <div class="cart-item-img">
-    <img src="./images/kids.jpg" width="100px" height="100px" />
+    <img src="./images/${e.image}" width="100px" height="100px" />
   </div>
   <div class="cart-action">
     <p>${e.name}</p>
     <p>Price: <span>$${e.grossPrice}</span></p>
-    <button id="add" onclick="increaseQty(${e.id})">
+    <button id="add" onclick="increaseQty('${e.id}')">
       <i class="fas fa-plus"></i>
     </button>
     <span>${e.qty}</span>
-    <button id="reduce" onclick="decreaseQty(${e.id})">
+    <button id="reduce" onclick="decreaseQty('${e.id}')">
       <i class="fas fa-minus"></i>
     </button>
-    <button id="remove" onclick="removeItem(${e.id})">Delete</button>
+    <button id="remove" onclick="removeItem('${e.id}')">Delete</button>
   </div>
 </div>`);
   });
 }
+// Make Payment
 
-let cartOld = [
-  {
-    id: 1,
-    name: "Apple",
-    qty: 1,
-    price: 100,
-    grossPrice: 100,
-  },
-  {
-    id: 2,
-    name: "Orange",
-    qty: 1,
-    price: 200,
-    grossPrice: 200,
-  },
-  {
-    id: 3,
-    name: "Banana",
-    qty: 1,
-    price: 300,
-    grossPrice: 300,
-  },
-];
+function makePayment() {
+  let finalCart = getCartLocalStorage();
+  if (finalCart.length > 0) {
+    emptyCart();
+    alert("Item Has been Paid");
+  }
+}
 
 // remove item from cart
 function removeItem(id) {
   for (let i = 0; i < cart.length; i++) {
-    if (cart[i].id === id) {
+    if (cart[i].id == id) {
       cart.splice(i, 1);
       updateTotalAmount();
     }
@@ -90,7 +78,7 @@ function removeItem(id) {
 // Increasing the quantity of an item in the cart
 function increaseQty(id) {
   for (let i = 0; i < cart.length; i++) {
-    if (cart[i].id === id) {
+    if (cart[i].id == id) {
       cart[i].qty++;
       cart[i].grossPrice = cart[i].price * cart[i].qty;
       updateTotalAmount();
@@ -100,10 +88,10 @@ function increaseQty(id) {
 // Decreasing the quantity of an item in the cart
 function decreaseQty(id) {
   for (let i = 0; i < cart.length; i++) {
-    if (cart[i].id === id && cart[i].qty == 1) {
+    if (cart[i].id == id && cart[i].qty == 1) {
       removeItem(id);
     }
-    if (cart[i].id === id && cart[i].qty > 1) {
+    if (cart[i].id == id && cart[i].qty > 1) {
       cart[i].qty--;
       cart[i].grossPrice = cart[i].price * cart[i].qty;
       updateTotalAmount();

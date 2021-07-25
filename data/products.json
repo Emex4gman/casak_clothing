@@ -1,0 +1,298 @@
+[
+  {
+    "id": "K1",
+    "name": "tie-die set",
+    "price": 12,
+    "category": "KIDS",
+    "image": "kid1.png",
+    "description": "Multi-colored tie and die furry coord set"
+  },
+  {
+    "id": "K2",
+    "name": "co-ord set",
+    "price": 20,
+    "category": "KIDS",
+    "image": "kid2.png",
+    "description": "Cotton animal printed bottoms with black top"
+  },
+  {
+    "id": "K3",
+    "name": "pajama set",
+    "price": " $32",
+    "category": "KIDS",
+    "image": "kid3.png",
+    "description": "Pink butterfly printed hoodie with pajama"
+  },
+  {
+    "id": "K4",
+    "name": "onesies",
+    "price": 30,
+    "category": "KIDS",
+    "image": "kid4.png",
+    "description": "Skin colored full arm unisex onesies ."
+  },
+  {
+    "id": "K5",
+    "name": "baby co-ords",
+    "price": 25,
+    "category": "KIDS",
+    "image": "kid5.png",
+    "description": "Girls onesies with sunflower printed pajama"
+  },
+  {
+    "id": "K6",
+    "name": "frilled frock",
+    "price": 20,
+    "category": "KIDS",
+    "image": "kid6.png",
+    "description": "Cotton material full arms pink floral frock"
+  },
+  {
+    "id": "K7",
+    "name": "blue onesies",
+    "price": 25,
+    "category": "KIDS",
+    "image": "kid7.png",
+    "description": "Tommy Hilfiger blue colored co-ords boy"
+  },
+  {
+    "id": "K8",
+    "name": "checker onesies",
+    "price": 18,
+    "category": "KIDS",
+    "image": "kid8.png",
+    "description": "Black and white checker onesies with hoodie"
+  },
+  {
+    "id": "K9",
+    "name": "black co-ords",
+    "price": 28,
+    "category": "KIDS",
+    "image": "kid9.png",
+    "description": "Blue half sleeves sweater with shorts"
+  },
+  {
+    "id": "K10",
+    "name": "girls onesies",
+    "price": 20,
+    "category": "KIDS",
+    "image": "kid10.png",
+    "description": "Purple onesies with meshed layers on sides"
+  },
+  {
+    "id": "K11",
+    "name": "floral frock",
+    "price": 35,
+    "category": "KIDS",
+    "image": "kid11.png",
+    "description": "floral purple colored dress for girls"
+  },
+  {
+    "id": "K12",
+    "name": "co-ords",
+    "price": 32,
+    "category": "KIDS",
+    "image": "kid12.png",
+    "description": "Pink colored frilled co-ords"
+  },
+  {
+    "id": "1",
+    "name": "Red check dress",
+    "price": 15,
+    "category": "WOMEN",
+    "image": "woman1.jpg",
+    "description": "cotton fabric red and black checker short dress"
+  },
+  {
+    "id": "2",
+    "name": "multi-frill dress",
+    "price": 25,
+    "category": "WOMEN",
+    "image": "woman2.jpg",
+    "description": "multi-colored short frill dress with fluff arms"
+  },
+  {
+    "id": "3",
+    "name": "jumpsuit",
+    "price": 27,
+    "category": "WOMEN",
+    "image": "woman3.jpg",
+    "description": "side slit straight line jumpsuit"
+  },
+  {
+    "id": "4",
+    "name": "maxi dress",
+    "price": 38,
+    "category": "WOMEN",
+    "image": "woman4.jpg",
+    "description": "black colored light embroidered long maxi dress."
+  },
+  {
+    "id": "5",
+    "name": "mini dress",
+    "price": 17,
+    "category": "WOMEN",
+    "image": "woman5.jpg",
+    "description": "Blue polka dots cotton material short dress"
+  },
+  {
+    "id": "6",
+    "name": "neon top",
+    "price": 11,
+    "category": "WOMEN",
+    "image": "woman6.jpg",
+    "description": "neon colored sports crop top"
+  },
+  {
+    "id": "7",
+    "name": "top-skirt",
+    "price": 32,
+    "category": "WOMEN",
+    "image": "woman7.jpg",
+    "description": "silver sequence crop top with mid-length flared skirt"
+  },
+  {
+    "id": "8",
+    "name": "crop top-skirt",
+    "price": 26,
+    "category": "WOMEN",
+    "image": "woman8.jpg",
+    "description": "leather mini skirt with green stretchy crop top"
+  },
+  {
+    "id": "9",
+    "name": "skirts",
+    "price": 25,
+    "category": "WOMEN",
+    "image": "woman9.jpg",
+    "description": "set of two cotton material tennis skirts"
+  },
+  {
+    "id": "10",
+    "name": "shorts with top",
+    "price": 25,
+    "category": "WOMEN",
+    "image": "woman10.jpg",
+    "description": "meshed black top with basic denim shorts"
+  },
+  {
+    "id": "11",
+    "name": "shorts with top",
+    "price": 22,
+    "category": "WOMEN",
+    "image": "woman11.jpg",
+    "description": "basic soft pink top with rugged shorts"
+  },
+  {
+    "id": "12",
+    "name": "denim with top",
+    "price": 48,
+    "category": "WOMEN",
+    "image": "woman12.jpg",
+    "description": "denim jacket with black polka dots top"
+  },
+  {
+    "id": "13",
+    "name": "floral dress",
+    "price": 45,
+    "category": "WOMEN",
+    "image": "woman13.jpg",
+    "description": "pink floral front slit dress"
+  },
+  {
+    "id": "101",
+    "name": "Animated T-shirt",
+    "price": 22,
+    "category": "MEN",
+    "image": "Man1.png",
+    "description": "Black cartoon animated t-shirt"
+  },
+  {
+    "id": "102",
+    "name": "Full sleeves t-shirt",
+    "price": 25,
+    "category": "MEN",
+    "image": "Man2.png",
+    "description": "Green round neck full sleeves t-shirt"
+  },
+  {
+    "id": "103",
+    "name": "White shirt",
+    "price": 18,
+    "category": "MEN",
+    "image": "Man3.png",
+    "description": "White colored rose printed shirt."
+  },
+  {
+    "id": "104",
+    "name": "hoodie-jacket",
+    "price": 48,
+    "category": "MEN",
+    "image": "Man4.png",
+    "description": "White colored center printed hoodie with ash denim jacket ."
+  },
+  {
+    "id": "105",
+    "name": "Good luck t-shirt",
+    "price": 35,
+    "category": "MEN",
+    "image": "Man5.png",
+    "description": "White animated print good luck t-shirt"
+  },
+  {
+    "id": "106",
+    "name": "Future t-shirt",
+    "price": 28,
+    "category": "MEN",
+    "image": "Man6.png",
+    "description": "Black colored future printed t-shirt"
+  },
+  {
+    "id": "107",
+    "name": "Blue 01 denim",
+    "price": 35,
+    "category": "MEN",
+    "image": "Man8.png",
+    "description": "Blue shade 01 rugged denim for men"
+  },
+  {
+    "id": "108",
+    "name": "Trouser styled denim",
+    "price": 30,
+    "category": "MEN",
+    "image": "Man9.png",
+    "description": "Blue trouser denim with 30% cotton"
+  },
+  {
+    "id": "109",
+    "name": "blue 08 denim",
+    "price": 40,
+    "category": "MEN",
+    "image": "Man7.png",
+    "description": "Blue shade 08 ankle-length knee cut denims"
+  },
+  {
+    "id": "1010",
+    "name": "Black trouser",
+    "price": 38,
+    "category": "MEN",
+    "image": "Man10.png",
+    "description": " black colored narrow trouser with side pockets"
+  },
+  {
+    "id": "1011",
+    "name": "Formals",
+    "price": 32,
+    "category": "MEN",
+    "image": "Man11.png",
+    "description": "Grey colored straight formal pants"
+  },
+  {
+    "id": "1012",
+    "name": "Black pants",
+    "price": 45,
+    "category": "MEN",
+    "image": "Man12.png",
+    "description": "Semi-formal black wide leg pants"
+  }
+]
