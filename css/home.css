@@ -92,7 +92,7 @@
   gap: 1em;
   flex-wrap: nowrap;
   flex-grow: 1;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   /* position: fixed; */
   /* left: 0; */
@@ -114,6 +114,7 @@
   padding: 0.6em;
   font-size: 1.2em;
   border-radius: 1em;
+  width: 100%;
 }
 .testimony-body p:nth-child(2) {
   text-align: end;
