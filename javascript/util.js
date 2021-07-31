@@ -1,6 +1,6 @@
 const jsonFilePath = "../data/products.json";
+loadJsonFileToLoacl(jsonFilePath);
 $(() => {
-  loadJsonFileToLoacl(jsonFilePath);
   // Toggle mobile nav bar
   $(".mobile-nav h3").click(function (e) {
     $(".mobile-nav ul").toggleClass("open");
