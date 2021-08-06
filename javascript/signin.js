@@ -1,11 +1,10 @@
 $(document).ready(() => {
   $("#button_group2").click(() => {
-
     const email = $("#email_group2").val();
     const mobile = $("#mobile_group2").val();
     const password = $("#password_group2").val();
     let isValid = true;
-    
+
     //Email Validations
     if (email == "") {
       $("#email_group2").next().text("This field is required");
@@ -43,5 +42,7 @@ $(document).ready(() => {
           );
       }
     }
+
+    if (isValid) location.href = `index.html`;
   });
 });

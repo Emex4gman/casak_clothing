@@ -57,7 +57,6 @@ function dispayTheCartItems() {
   });
 }
 // Make Payment
-
 function makePayment() {
   let finalCart = getCartLocalStorage();
   if (finalCart.length > 0) {

@@ -52,14 +52,16 @@ function setLocalStorage(crt = []) {
 
 // add item to cart
 function addItem(id) {
+  // get items in cart from local storage
   let local = getCartLocalStorage();
-
+  // looking for the product
   let found = products.filter((e) => e.id == id);
 
   // Check if item is in cart
   let foundInCArt = local.filter((e) => e.id == id);
   if (foundInCArt.length > 0) {
     alert("item Already in cart");
+    location.href = `shopingcart.html`;
   }
 
   if (found.length > 0 && foundInCArt.length == 0) {
@@ -70,6 +72,7 @@ function addItem(id) {
       qty: 1,
     };
     local.push(itemToAdd);
+    // update cart
     setLocalStorage(local);
     location.href = `shopingcart.html`;
   }
