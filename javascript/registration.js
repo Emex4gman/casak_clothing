@@ -81,15 +81,12 @@ $(document).ready(() => {
       isValid = false;
     } else {
       $("#password_group2").next().text("");
-      var pattern = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[-+_!@#$%^&*.,?]).+$";
-      if (password == password.match(pattern)) {
+      var pattern = ("^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[-+_!@#$%^&*.,?]).+$");
+      if(password == password.match(pattern)){
         $("#password_group2").next().text("");
-      } else {
-        $("#password_group2")
-          .next()
-          .text(
-            "Must contain LowerCase Character, Uppercase Character, Number, Special Character"
-          );
+      }
+      else{
+        $("#password_group2").next().text("Must contain LowerCase Character, Uppercase Character, Number, Special Character");
       }
     }
 
@@ -99,18 +96,23 @@ $(document).ready(() => {
       isValid = false;
     } else {
       $("#repassword_group2").next().text("");
-      if ((password.isValid = true)) {
+      if(password.isValid = true){
         $("#repassword_group2").next().text("");
-        if (password == repassword) {
+        if(password == repassword){
           $("#repassword_group2").next().text("");
-        } else {
-          $("#repassword_group2").next().text("Your passwords dont match");
         }
-      } else {
+        else{
+          $("#repassword_group2").next().text("Your passwords dont match");
+          isValid = false;
+        }
+      }
+      else{
         $("#repassword_group2").next().text("Password conditions not met");
+        isValid = false;
+      }
+      if(isValid == true){
+        window.location.href = "login.html";
       }
     }
-
-    if (isValid) location.href = `login.html`;
   });
 });
